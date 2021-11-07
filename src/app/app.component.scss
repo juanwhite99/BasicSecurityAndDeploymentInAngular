@@ -1,0 +1,49 @@
+.container {
+  display: flex;
+  flex-direction: row;
+  min-height: 100vh;
+
+  &-body {
+    display: flex;
+    flex-direction: column;
+    flex: 1;
+  }
+
+  &-content {
+    display: flex;
+    flex: 1;
+    padding: 1rem;
+    background-color: yellow;
+  }
+}
+
+.left-bar {
+  display: flex;
+  flex-direction: column;
+  background-color: gray;
+  a {
+    margin: 2rem 0.5rem;
+  }
+}
+
+.top-bar {
+  display: flex;
+  align-items: center;
+  background-color: black;
+  min-height: 2rem;
+  padding: 1rem;
+}
+
+a {
+  margin-right: 1rem;
+  color: white;
+  text-decoration: none;
+}
+
+.footer {
+  display: flex;
+  min-height: 1rem;
+  background-color: black;
+  color: white;
+  padding: 1.5rem;
+}
