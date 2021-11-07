@@ -9,7 +9,8 @@ const routes: Routes = [
   { path: "", component: HomeComponent, pathMatch:"full"},
   { path: "home", component: HomeComponent},
   { path: "login", component: LoginComponent},
-  { path: "admin", component: AdminComponent, canActivate: [AuthGuard]}
+  { path: "admin", component: AdminComponent, canActivate: [AuthGuard]},
+  { path: 'products', loadChildren: () => import('./modules/products/products.module').then(m => m.ProductsModule) }
 ];
 
 @NgModule({
